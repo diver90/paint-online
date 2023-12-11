@@ -1,0 +1,65 @@
+@import "variables";
+
+.toolbar {
+  height: $toolbar-height;
+  background-color: white;
+  display: flex;
+  align-items: center;
+  position: absolute;
+  width: 100%;
+  box-shadow: 0px 4px 5px gray;
+  margin-bottom: 4px;
+  z-index: 999;
+
+  &__btn {
+    width: 25px;
+    height: 25px;
+    border: none;
+    outline: none;
+    background-size: cover;
+    background: no-repeat center center;
+    margin-left: 10px;
+  }
+
+  .brush {
+    background: url("../assets/img/brush.png");
+  }
+  .rectangle{
+    background: url("../assets/img/rect.png");
+  }
+  .circle{
+    background: url("../assets/img/circle.png");
+  }
+  .eraser{
+    background: url("../assets/img/eraser.png");
+  }
+  .line{
+    background: url("../assets/img/line.png");
+  }
+  .image{
+    background: url("../assets/img/image 1.png");
+  }
+  .undo{
+    margin-left: auto;
+    background: url("../assets/img/undo.png");
+  }
+  .redo{
+    background: url("../assets/img/redo.png");
+  }
+  .save{
+    margin-right: 10px;
+    background: url("../assets/img/save.png");
+  }
+}
+
+.setting-bar {
+  height: $toolbar-height;
+  background-color: white;
+  display: flex;
+  align-items: center;
+  position: absolute;
+  width: 100%;
+  box-shadow: 0px 4px 5px gray;
+  top: $toolbar-height;
+  padding: 0 10px;
+}
